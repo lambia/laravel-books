@@ -5,8 +5,8 @@
     <ul>
         @foreach ($libri as $libro)
             <li>
-                <span>{{ $libro->nome }}</span>
-                <img class="copertina" src="{{ $libro->copertina }}" alt="">
+                <span>{{ $libro->name }}</span>
+                <img class="copertina" src="{{ $libro->cover }}" alt="">
             </li>
         @endforeach
     </ul>

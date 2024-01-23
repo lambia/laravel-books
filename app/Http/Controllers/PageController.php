@@ -9,9 +9,11 @@ class PageController extends Controller
 {
     public function index()
     {
-        $risposta = config("data");
-        $libri = Book::all();
+        // $risposta = config("data");
+        $dati = [
+            "libri" => Book::all()
+        ];
 
-        return view('home', compact("risposta", "libri"));
+        return view('home', $dati);
     }
 }

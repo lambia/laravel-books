@@ -50,6 +50,7 @@ class BooksTableSeeder extends Seeder
         for ($i = 0; $i < 5; $i++) {
             $nuovoLibro = new Book();
             $nuovoLibro->name = $faker->sentence();
+            $nuovoLibro->cover = $faker->imageUrl(200, 300, "books", true);
             $nuovoLibro->author = $faker->name();
             $nuovoLibro->price = "101.00"; //$faker->randomFloat(2);
             $nuovoLibro->description = $faker->sentence(100);

@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string("author");
             $table->decimal("price");
             $table->text("description")->nullable();
+            $table->text("cover")->nullable();
             $table->boolean("is_available")->default(1);
             $table->smallInteger("page_number")->nullable()->unsigned();
             $table->string("isbn_code", 13)->unique();
